@@ -5861,6 +5861,24 @@
             .content__contacts>ul.contact-details {
                 grid-template-columns: repeat(2, minmax(0, 1fr));
             }
+
+            .contact-details .contact-row+.contact-row {
+                padding-top: 0;
+            }
+        }
+
+        @media (min-width: 701px) and (max-width: 1350px) {
+            .content__contacts>ul.contact-details {
+                row-gap: 44px;
+            }
+
+            .content__contacts>ul.contact-details>li {
+                row-gap: 10px;
+            }
+
+            .contact-details .contact-row+.contact-row {
+                padding-top: 20px;
+            }
         }
 
         @media (max-width: 700px) {
